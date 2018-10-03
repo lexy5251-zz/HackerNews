@@ -41,20 +41,11 @@ $(function() {
     })
 });
 
-// function fillImage(storyUrl, cardView) {
-//     $.get(storyUrl, function(data) {
-//         var $ogImage = $(data).filter("meta[property='og:image']").attr('content');
-//         $imgPlaceholder.prepend($articleImage.attr('src', $ogImage));
-//         $imgField.val($ogImage);
-//     });
-
-// }
-
 function createViewForItem(element) {
 
     $.ajax({
         type: 'POST',
-        url: "http://localhost:8080/getImageUrl",
+        url: "https://hackernewsoa.herokuapp.com/getImageUrl",
         data: {
             itemUrl: element.url
         }
