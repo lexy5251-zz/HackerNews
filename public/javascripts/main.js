@@ -52,8 +52,10 @@ function createViewForItem(element) {
 
     console.log("data is ",data);
     if (imageUrl) {
-        $('.articles').append(`<div class="card"><h3>${element.title}</h3>
-                           <img src=${imageUrl} /></div>
+        $('.articles').append(`<div class="card"><img src=${imageUrl} />
+                               <div class="author">${element.by}</div>
+                               <h3>${element.title}</h3>
+                               </div>
                             `);
     } else {
         $('.articles').append(`<h3>${element.title}</h3>

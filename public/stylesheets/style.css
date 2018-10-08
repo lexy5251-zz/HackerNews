@@ -8,6 +8,17 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+h3 {
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  line-height: 32px;
+}
+
+h3:hover {
+  text-decoration: underline;
+}
+
 .container {
   margin: 0 auto;
   overflow: hidden;
@@ -79,7 +90,7 @@ li {
   font-size: 18px;
 }
 
-li .invest-button {
+.invest-button {
     border: 1px solid #ffb219;
     border-radius: 33px;
     background: #ffb219;
@@ -91,11 +102,14 @@ li .invest-button {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
+  padding: 0 5%;
 }
 
 
 .card {
   display: grid;
   justify-items: center;
-  padding: 0 5%;
+  padding: 5%;
+  border: 1px solid white;
+  background: white;
 }
