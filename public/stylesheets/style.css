@@ -132,7 +132,7 @@ li {
   grid-template-rows: 0.8fr 0.1fr 0.1fr;
 }
 
-.load-button {
+#load-button {
   border: 1px solid #ffb219;
   border-radius: 33px;
   background: #ffb219;
