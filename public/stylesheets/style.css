@@ -140,4 +140,15 @@ li {
   color: white;
   position: relative;
   left: 47%;
+  margin-top: 5%;
+  width: 180px;
+}
+
+.footer-container {
+  background-color: black;
+  color: white;
+}
+
+.footer-list-content-bold {
+  text-transform: uppercase;
 }
