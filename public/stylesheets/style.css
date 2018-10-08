@@ -13,7 +13,7 @@ body {
   font-size: 24px;
   letter-spacing: -0.02em;
   line-height: 32px;
-  grid-row: 3/4;
+
 }
 
 .card-h3:hover {
@@ -32,6 +32,7 @@ header {
   position: fixed;
   display: grid;
   grid-template-columns: 100px 0.5fr 0.7fr 100px;
+  z-index: 1;
 }
 
 nav {
@@ -59,11 +60,16 @@ img {
 }
 
 .author {
-  grid-row: 2 / 3;
   text-transform: uppercase;
   opacity: 0.5;
   font-size: 16px;
   letter-spacing: 2px;
+  margin-top: 5%;
+}
+
+.card-content {
+  width: 90%;
+  grid-row: 2/3;
 }
 
 .title {
@@ -124,4 +130,14 @@ li {
   border: 1px solid white;
   background: white;
   grid-template-rows: 0.8fr 0.1fr 0.1fr;
+}
+
+.load-button {
+  border: 1px solid #ffb219;
+  border-radius: 33px;
+  background: #ffb219;
+  padding: 15px;
+  color: white;
+  position: relative;
+  left: 47%;
 }
