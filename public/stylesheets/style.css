@@ -9,9 +9,8 @@ body {
 }
 
 .container {
-
   margin: 0 auto;
-
+  overflow: hidden;
 }
 
 header {
@@ -43,7 +42,7 @@ nav {
 }
 
 img {
-  width: 20%;
+  width: 80%;
 }
 
 .title {

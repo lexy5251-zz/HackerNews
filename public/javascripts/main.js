@@ -52,7 +52,7 @@ function createViewForItem(element) {
 
     console.log("data is ",data);
     if (imageUrl) {
-        $('.articles').append(`<div><h3>${element.title}</h3>
+        $('.articles').append(`<div class="card"><h3>${element.title}</h3>
                            <img src=${imageUrl} /></div>
                             `);
     } else {
