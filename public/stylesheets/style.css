@@ -138,10 +138,12 @@ li {
   background: #ffb219;
   padding: 15px;
   color: white;
-  position: relative;
+/*  position: relative;
   left: 47%;
-  margin-top: 5%;
+*/
+  margin-top: 5% auto;
   width: 180px;
+  font-size: 18px;
 }
 
 .footer-container {
