@@ -1,6 +1,4 @@
 $(function() {
-    // $('#select-menu').selectric();
-
     $.ajax({
         type: 'GET',
         url: `https://hacker-news.firebaseio.com/v0/newstories.json?print=pretty`,
@@ -54,8 +52,8 @@ function createViewForItem(element) {
 
     console.log("data is ",data);
     if (imageUrl) {
-        $('.articles').append(`<h3>${element.title}</h3>
-                           <img src=${imageUrl} />
+        $('.articles').append(`<div><h3>${element.title}</h3>
+                           <img src=${imageUrl} /></div>
                             `);
     } else {
         $('.articles').append(`<h3>${element.title}</h3>
