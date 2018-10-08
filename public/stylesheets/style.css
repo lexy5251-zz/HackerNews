@@ -8,14 +8,15 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-h3 {
+.card-h3 {
   font-weight: 600;
   font-size: 24px;
   letter-spacing: -0.02em;
   line-height: 32px;
+  grid-row: 3/4;
 }
 
-h3:hover {
+.card-h3:hover {
   text-decoration: underline;
 }
 
@@ -53,7 +54,16 @@ nav {
 }
 
 img {
-  width: 80%;
+  width: 90%;
+  grid-row: 1 / 2;
+}
+
+.author {
+  grid-row: 2 / 3;
+  text-transform: uppercase;
+  opacity: 0.5;
+  font-size: 16px;
+  letter-spacing: 2px;
 }
 
 .title {
@@ -62,7 +72,7 @@ img {
 }
 
 .subtitle-h1 {
-  margin: 0px;
+  margin: 2%;
   font-size: 76px;
 }
 
@@ -94,11 +104,12 @@ li {
     border: 1px solid #ffb219;
     border-radius: 33px;
     background: #ffb219;
-    padding: 10px 15px;
+    padding: 15px;
     color: white;
 }
 
 .articles {
+  margin-top: 5%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
@@ -112,4 +123,5 @@ li {
   padding: 5%;
   border: 1px solid white;
   background: white;
+  grid-template-rows: 0.8fr 0.1fr 0.1fr;
 }
