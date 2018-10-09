@@ -2,16 +2,18 @@ $(function(){
 retrieveAndRender(0);
 
 $("#all-stories").click(function() {
+    $(this).css('opacity','1')
     retrieveAndRender(0);
 });
 
 $("#odd-stories").click(function() {
+    $(this).css('opacity','1')
     retrieveAndRender(1);
 });
 
 
 $("#even-stories").click(function() {
-    console.log("even-stories");
+    $(this).css('opacity','1')
     retrieveAndRender(2);
 });
 
