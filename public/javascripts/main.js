@@ -83,7 +83,9 @@ $("#all-stories").click(function() {
 });
 
 $("#odd-stories").click(function() {
+    console.log("this odd button is triggered:");
     retrieveAndRender(1);
+    console.log("this odd button is triggered: and get data",mode);
 });
 
 $("#even-stories").click(function() {
