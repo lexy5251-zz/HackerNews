@@ -1,5 +1,19 @@
 retrieveAndRender(0);
 
+$("#all-stories").click(function() {
+    retrieveAndRender(0);
+});
+
+$("#odd-stories").click(function() {
+    console.log("this odd button is triggered:");
+    retrieveAndRender(1);
+    console.log("this odd button is triggered: and get data",mode);
+});
+
+$("#even-stories").click(function() {
+    retrieveAndRender(2);
+});
+
 function retrieveAndRender(mode) {
     $('.articles').empty();
     $(function() {
@@ -78,16 +92,3 @@ function createViewForItem(element) {
 
 }
 
-$("#all-stories").click(function() {
-    retrieveAndRender(0);
-});
-
-$("#odd-stories").click(function() {
-    console.log("this odd button is triggered:");
-    retrieveAndRender(1);
-    console.log("this odd button is triggered: and get data",mode);
-});
-
-$("#even-stories").click(function() {
-    retrieveAndRender(2);
-});
