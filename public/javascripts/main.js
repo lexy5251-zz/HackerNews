@@ -20,7 +20,7 @@ function retrieveAndRender(mode) {
     $(function() {
         $.ajax({
             type: 'GET',
-            url: `https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty`,
+            url: `https://hacker-news.firebaseio.com/v0/newstories.json?print=pretty`,
         }).then(function(data) {
 
             let number = 0;
@@ -76,7 +76,6 @@ function createViewForItem(element) {
                                <div class="card-content">
                                <div class="author">${element.by}</div>
                                <h3 class="card-h3"><a href=${element.url}>${element.title}</a></h3>
-                               <p>${element.text}</p>
                                </div>
                                </div>
                             `);

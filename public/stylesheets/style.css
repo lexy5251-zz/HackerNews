@@ -163,8 +163,6 @@ li {
   z-index: -1;
   top: -34%;
   background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(250,250,250,0.6068627280013568) 0%, rgba(255,255,255,0.7301120277212447) 58%);
-
-}
 }
 
 #load-button {
@@ -187,7 +185,7 @@ li {
   opacity: 0.4;
 }
 
-.sub-nav-button:visited {
+.sub-nav-button:active {
   opacity: 1;
 }
 
