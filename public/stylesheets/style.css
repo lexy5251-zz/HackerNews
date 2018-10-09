@@ -44,7 +44,7 @@ nav {
 }
 
 .main-content {
-  padding: 150px 0;
+  padding: 250px 0;
 }
 
 .logo {
@@ -162,6 +162,7 @@ li {
 
 .footer-list-content-bold {
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .footer-list-content {
