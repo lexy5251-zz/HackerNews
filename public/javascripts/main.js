@@ -2,6 +2,7 @@ retrieveAndRender(0);
 console.log("~~~~~~~hello");
 
 $("#all-stories").click(function() {
+    console.log("all-stories");
     retrieveAndRender(0);
 });
 
@@ -12,6 +13,7 @@ $("#odd-stories").click(function() {
 });
 
 $("#even-stories").click(function() {
+    console.log("even-stories");
     retrieveAndRender(2);
 });
 
