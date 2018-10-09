@@ -1,6 +1,7 @@
 retrieveAndRender(0);
 
 function retrieveAndRender(mode) {
+    $('.articles').empty();
     $(function() {
         $.ajax({
             type: 'GET',
