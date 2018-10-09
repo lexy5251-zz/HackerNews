@@ -1,4 +1,5 @@
 retrieveAndRender(0);
+console.log("~~~~~~~hello");
 
 $("#all-stories").click(function() {
     retrieveAndRender(0);
@@ -34,12 +35,12 @@ function retrieveAndRender(mode) {
                 dataPartial.forEach(function(index) {
                     if (mode === 0 || (mode === 1 && index % 2 === 1) || (mode === 2 && index % 2 === 0)) {
                         let storyUrl = `https://hacker-news.firebaseio.com/v0/item/${index}.json?print=pretty`;
-                        console.log("storyUrl is: ", storyUrl);
+                        //console.log("storyUrl is: ", storyUrl);
                         $.ajax({
                             type: 'GET',
                             url: storyUrl,
                         }).then(function(element) {
-                            console.log(storyUrl);
+                            //console.log(storyUrl);
                             createViewForItem(element);
                         });
                     }
@@ -68,7 +69,7 @@ function createViewForItem(element) {
     }).then(function(data) {
         let imageUrl = data.image;
 
-        console.log("data is ", data);
+        //console.log("data is ", data);
         if (imageUrl) {
             $('.articles').append(`<div class="card"><img src=${imageUrl} />
                                <div class="card-content">
