@@ -1,18 +1,12 @@
 $(function(){
-
-
 retrieveAndRender(0);
-console.log("~~~~~~~hello");
 
 $("#all-stories").click(function() {
-    console.log("all-stories");
     retrieveAndRender(0);
 });
 
 $("#odd-stories").click(function() {
-    console.log("this odd button is triggered:");
     retrieveAndRender(1);
-    console.log("this odd button is triggered: and get data",mode);
 });
 
 

@@ -56,7 +56,8 @@ nav {
 
 img {
   width: 90%;
-  grid-row: 1 / 2;
+  display: grid;
+  margin: 0 auto;
 }
 
 .author {
@@ -144,6 +145,12 @@ li {
   margin-top: 5% auto;
   width: 180px;
   font-size: 18px;
+}
+
+.sub-nav-button {
+  border: none;
+  background: #f9f8f6;
+  font-size: 21px;
 }
 
 .footer-container {
