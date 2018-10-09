@@ -1,3 +1,6 @@
+$(function(){
+
+
 retrieveAndRender(0);
 console.log("~~~~~~~hello");
 
@@ -11,6 +14,7 @@ $("#odd-stories").click(function() {
     retrieveAndRender(1);
     console.log("this odd button is triggered: and get data",mode);
 });
+
 
 $("#even-stories").click(function() {
     console.log("even-stories");
@@ -58,6 +62,7 @@ function retrieveAndRender(mode) {
         })
     });
 }
+});
 
 
 function createViewForItem(element) {
