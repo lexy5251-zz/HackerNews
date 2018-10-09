@@ -75,7 +75,8 @@ function createViewForItem(element) {
             $('.articles').append(`<div class="card"><img src=${imageUrl} />
                                <div class="card-content">
                                <div class="author">${element.by}</div>
-                               <h3 class="card-h3">${element.title}</h3>
+                               <h3 class="card-h3"><a href=${element.url}>${element.title}</a></h3>
+                               <p>${element.text}</p>
                                </div>
                                </div>
                             `);
@@ -84,7 +85,7 @@ function createViewForItem(element) {
                                <img src="images/trade-war-final.jpg" />
                                <div class="card-content">
                                <div class="author">${element.by}</div>
-                               <h3><h3 class="card-h3">${element.title}</h3>
+                               <h3><h3 class="card-h3"><a href=${element.url}>${element.title}</a></h3>
                                </div>
                                </div>
                               `);

@@ -32,7 +32,7 @@ header {
   position: fixed;
   display: grid;
   grid-template-columns: 100px 0.5fr 0.7fr 100px;
-  z-index: 1;
+  z-index: 5;
 }
 
 nav {
@@ -44,7 +44,7 @@ nav {
 }
 
 .main-content {
-  padding: 250px 0;
+  padding-top: 250px;
 }
 
 .main-img {
@@ -154,7 +154,17 @@ li {
   padding: 5%;
   border: 1px solid white;
   background: white;
-  grid-template-rows: 0.8fr 0.1fr 0.1fr;
+  grid-template-rows: repeat(3, min-content);
+}
+
+.loadmore {
+  width: 100%;
+  height: 500px;
+  z-index: -1;
+  top: -34%;
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(250,250,250,0.6068627280013568) 0%, rgba(255,255,255,0.7301120277212447) 58%);
+
+}
 }
 
 #load-button {
