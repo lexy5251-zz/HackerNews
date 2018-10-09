@@ -5,7 +5,7 @@
 body {
   margin: 0px;
   background-color: #f9f8f6;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Cabin', sans-serif;
 }
 
 .card-h3 {
@@ -49,8 +49,9 @@ nav {
 
 .main-img {
   display: grid;
-  grid-template-rows: repeat(8, main-content);
+  grid-template-rows: repeat(8, min-content);
   grid-template-columns: repeat(5, auto);
+  margin-top: 5%;
 }
 
 .main-img-content {
@@ -162,10 +163,9 @@ li {
   background: #ffb219;
   padding: 15px;
   color: white;
-/*  position: relative;
-  left: 47%;
-*/
-  margin-top: 5% auto;
+  position: relative;
+  left: 45%;
+  margin-top: 5%;
   width: 180px;
   font-size: 18px;
 }
@@ -174,7 +174,13 @@ li {
   border: none;
   background: #f9f8f6;
   font-size: 21px;
+  opacity: 0.4;
 }
+
+.sub-nav-button:visited {
+  opacity: 1;
+}
+
 
 .footer-container {
   background-color: black;
