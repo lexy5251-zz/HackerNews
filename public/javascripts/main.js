@@ -20,7 +20,7 @@ function retrieveAndRender(mode) {
     $(function() {
         $.ajax({
             type: 'GET',
-            url: `https://hacker-news.firebaseio.com/v0/beststories.json?print=pretty`,
+            url: `https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty`,
         }).then(function(data) {
 
             let number = 0;
