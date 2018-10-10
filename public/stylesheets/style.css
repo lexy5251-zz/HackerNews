@@ -226,6 +226,7 @@ li {
 
 .footer-list {
   display: grid;
+  font-size: 15px;
 }
 
 .list1 {
