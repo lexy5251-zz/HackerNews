@@ -1,19 +1,24 @@
-$(function(){
+$(document).ready(function(){
 retrieveAndRender(0);
 
+$('.sub-nav button').click(function(){
+  $('.sub-nav button:first').addClass('active');
+  $('.sub-nav button').click(function(e) {
+    $('.sub-nav button').removeClass('active');
+    $(this).addClass('active');
+  })
+})
+
 $("#all-stories").click(function() {
-    $(this).css('opacity','1')
     retrieveAndRender(0);
 });
 
 $("#odd-stories").click(function() {
-    $(this).css('opacity','1')
     retrieveAndRender(1);
 });
 
 
 $("#even-stories").click(function() {
-    $(this).css('opacity','1')
     retrieveAndRender(2);
 });
 
@@ -83,7 +88,7 @@ function createViewForItem(element) {
                             `);
         } else {
             $('.articles').append(`<div class="card">
-                               <img src="images/trade-war-final.jpg" />
+                               <img src="images/not-available.jpg" />
                                <div class="card-content">
                                <div class="author">${element.by}</div>
                                <h3><h3 class="card-h3"><a href=${element.url}>${element.title}</a></h3>

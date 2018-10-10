@@ -53,6 +53,10 @@ nav {
 
 .sub-nav {
   color: grey;
+  display: flex;
+  padding: 0;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .main-content {
@@ -213,7 +217,7 @@ li {
   opacity: 0.4;
 }
 
-.sub-nav-button:active {
+.active {
   opacity: 1;
 }
 
@@ -255,7 +259,6 @@ li {
   display: grid;
   font-size: 15px;
   grid-template-rows: repeat(8, 1fr);
-  grid-row-gap: 10px;
 }
 
 .list1 {
