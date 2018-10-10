@@ -13,6 +13,13 @@ a {
   color: black;
 }
 
+h3 {
+  font-size: 24px;
+  letter-spacing: -.03em;
+  line-height: 32px;
+  margin: 3% 0;
+}
+
 .card-h3 {
   font-weight: 600;
   font-size: 24px;
@@ -95,6 +102,22 @@ img {
   font-size: 16px;
   letter-spacing: 2px;
   margin-top: 5%;
+  font-weight: 600;
+}
+
+.main-img-content-author {
+  text-transform: uppercase;
+  opacity: 0.5;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-top: 2%;
+  font-weight: 600;
+}
+
+.main-img-content-p {
+  line-height: 28px;
+  font-size: 18px;
+  letter-spacing: 1px;
 }
 
 .card-content {
@@ -201,8 +224,8 @@ li {
   margin: 0px;
   display: grid;
   grid-template-rows: 1fr 1fr 0.6fr;
-  padding: 2% 8%;
-  grid-row-gap: 20%;
+  padding: 6% 8%;
+  grid-row-gap: 10%;
 }
 
 .footer-container-upper,
@@ -212,17 +235,10 @@ li {
 }
 
 .footer-horizontal {
-  font-size: 14px;
+  font-size: 15px;
   grid-column: 1 / 3;
 }
 
-.footer-horizontal:first-child::after {
-  color: white;
-  width: 2px;
-  height: 2px;
-  content: ".";
-
-}
 
 .footer-list-content-bold {
   text-transform: uppercase;
